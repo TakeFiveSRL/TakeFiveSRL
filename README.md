@@ -4,14 +4,14 @@
 
 ### Python Libraries
 
-jsonrpclib
-nltk
-simplejson
-rdflib
-pyyaml
-ast
-requests
-SPARQLWrapper
+jsonrpclib<br/>
+nltk<br/>
+simplejson<br/>
+rdflib<br/>
+pyyaml<br/>
+ast<br/>
+requests<br/>
+SPARQLWrapper<br/>
 
 ## Standford NLP:
 
