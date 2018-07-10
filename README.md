@@ -1,28 +1,24 @@
 # TakeFiveSRL
 
-## Pre-requisites:
+SRL is designed as an application that relies on Docker. Hence, users need [`Docker`](https://docs.docker.com/) to build and run SRL.
 
-### Python Libraries
+Get it from https://docs.docker.com/engine/installation/#supported-platforms
 
-jsonrpclib<br/>
-nltk<br/>
-simplejson<br/>
-rdflib<br/>
-pyyaml<br/>
-ast<br/>
-requests<br/>
-SPARQLWrapper<br/>
+# Running
 
-## Standford NLP:
+Run your Docker instance and then type the following command on terminal:
 
-Stanford parser is one of the major components. It should be running on the port 127.0.0.1:9000. The version of Stanford NLP to be used for running the TakeFive SRL  is available from [1].
+```
+docker-compose up corenlpsrl
+```
 
-## How to run TakeFiveSRL:
 
-Finally, in order to run the SRL algorithm, simply run the following command:
+Then, in a new shell, go to the srl_example folder and type
 
-```python SemanticRoleLabelingVerbNetCentred.py  "I am eating an apple."```
- 
-The software is also available as the Docker version which can be requested, please contact us at: diego.reforgiato@unica.it or mehwish.alam@istc.cnr.it.
+```
+cd srl_example
+docker build -t python-barcode .
+docker run  --network=srldocker_srlnet python-barcode
+```
 
-[1] https://hub.docker.com/r/motiz88/corenlp/~/dockerfile/
+If you want to change the example sentence, just type a new one in the Dockerfile file (last row) and repeat the last two commands
