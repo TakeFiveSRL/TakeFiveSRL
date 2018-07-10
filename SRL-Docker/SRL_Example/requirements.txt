@@ -1,0 +1,9 @@
+jsonrpclib
+nltk
+simplejson
+rdflib
+pyyaml
+ast
+requests
+simplejson
+SPARQLWrapper

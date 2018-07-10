@@ -1,0 +1,19 @@
+version: '2'
+services:
+
+  corenlpsrl:
+    container_name: corenlpsrl
+    image: motiz88/corenlp
+    ports:
+     - 9000:9000
+    networks:
+      srlnet:
+        ipv4_address: 173.21.0.4
+
+networks:
+  srlnet:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 173.21.0.0/16
+         gateway: 173.21.0.1
