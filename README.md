@@ -9,7 +9,7 @@ Get it from https://docs.docker.com/engine/installation/#supported-platforms
 Run your Docker instance and then type the following command on terminal:
 
 ```
-docker-compose up corenlpsrl
+docker-compose --project-name srldocker up corenlpsrl
 ``` 
 
 
